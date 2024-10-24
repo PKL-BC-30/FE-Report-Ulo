@@ -1,0 +1,349 @@
+/* styles.css */
+:root {
+    --primary-bg: #151318;
+    --card-bg: #1E1C21;
+    --primary-text: #ffffff;
+    --secondary-text: #BBBBBC;
+    --accent-color: #6366f1;
+    --success-color: #48bb78;
+  }
+  
+  body {
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+    margin: 0;
+    overflow-x: hidden; /* Sembunyikan scroll bar horizontal */
+    overflow-y: auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+  
+  .dashboard {
+    padding: 2rem;
+  }
+  
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .dashboard-header h1 {
+    font-family: 'Inter';
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .user-profile {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .metric-card {
+    width: 298px;
+    height: 125px;
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px; /* Radius 8px */
+    position: relative;
+    border: 1px solid #363636; /* Default border transparan */
+    transition: background 0.3s ease, border 0.3s ease; /* Smooth transition */
+    overflow: hidden; /* Pseudo-element tidak keluar */
+  }
+  
+  /* Saat hover */
+  .metric-card:hover {
+    background: linear-gradient(to right, #1E1C21 16%, #21274D 100%); /* Gradien background */
+    border-color: rgba(126, 114, 255, 0.8); /* Warna border berubah */
+  }
+  
+  /* Pseudo-element untuk efek stroke saat hover */
+  .metric-card:hover:before {
+    content: "";
+    position: absolute;
+    top: -2px; /* Buat sedikit keluar untuk ilusi stroke */
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 8px; /* Ikuti bentuk kotak */
+    background: linear-gradient(90deg, rgba(126, 114, 255, 0.25) 25%, rgba(33, 39, 77, 0.58) 58%); /* Gradien border */
+    z-index: -1; /* Tetap di belakang konten */
+  }
+  
+  .metric-card h3 {
+    font-family: 'Inter';
+    margin-top: -16px;
+  }
+  
+  .metric-value {
+    font-family: 'Inter';
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .metric-change {
+    font-size: 0.875rem;
+    color: var(--success-color);
+  }
+  
+  .metric-subtext {
+    font-family: 'Inter';
+    color: var(--secondary-text);
+    font-size: 0.875rem;
+  }
+  .metric-card-active {
+    margin-left: -120px;
+    width: 298px;
+    height: 125px;
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px; /* Radius 8px */
+    position: relative;
+    border: 1px solid #363636;
+    transition: background 0.3s ease, border 0.3s ease; /* Smooth transition */
+    overflow: hidden;
+  }
+  
+  /* Efek saat di-hover */
+  .metric-card-active:hover {
+    background: linear-gradient(to right, #1E1C21 16%, #21274D 100%); /* Gradien background */
+    border-color: rgba(126, 114, 255, 0.8); /* Warna border berubah */
+  }
+  
+  /* Efek gradien stroke di hover dengan pseudo-element */
+  .metric-card-active:hover:before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 8px; /* Mengikuti radius border */
+    background: linear-gradient(90deg, rgba(126, 114, 255, 0.25) 25%, rgba(33, 39, 77, 0.58) 58%); /* Gradien untuk stroke */
+    z-index: -1; /* Tetap di belakang konten */
+  }
+  
+  .metric-card-active h3 {
+    font-family: 'Inter';
+    margin-top: -16px;
+  }
+  
+  
+  .metric-value-active {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    font-family: 'Inter';
+    gap: 0.5rem;
+  }
+  
+  .metric-change-active {
+    font-size: 0.875rem;
+    color: var(--success-color);
+  }
+  
+  .metric-subtext-active {
+    font-family: 'Inter';
+    color: var(--secondary-text);
+    font-size: 0.875rem;
+  }
+  .metric-card-total {
+    margin-left: -240px;
+    width: 298px;
+    height: 125px;
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px; /* Radius 8px */
+    position: relative;
+    border: 1px solid #363636;
+    transition: background 0.3s ease, border 0.3s ease; /* Smooth transition */
+    overflow: hidden;
+  }
+  
+  /* Efek saat di-hover */
+  .metric-card-total:hover {
+    background: linear-gradient(to right, #1E1C21 16%, #21274D 100%); /* Gradien background */
+    border-color: rgba(126, 114, 255, 0.8); /* Warna border berubah */
+  }
+  
+  /* Efek gradien stroke di hover dengan pseudo-element */
+  .metric-card-total:hover:before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 8px; /* Mengikuti radius border */
+    background: linear-gradient(90deg, rgba(126, 114, 255, 0.25) 25%, rgba(33, 39, 77, 0.58) 58%); /* Gradien untuk stroke */
+    z-index: -1; /* Tetap di belakang konten */
+  }
+  
+  .metric-value-total {
+    font-family: 'Inter';
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .metric-card-total h3 {
+    font-family: 'Inter';
+    margin-top: -16px;
+  }
+  
+  .metric-change-total {
+    font-size: 0.875rem;
+    color: var(--success-color);
+  }
+  
+  .metric-subtext-total {
+    font-family: 'Inter';
+    color: var(--secondary-text);
+    font-size: 0.875rem;
+  }
+  
+  .charts-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .revenue-chart,
+  .genre-chart {
+    background-color: var(--card-bg);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    min-height: 300px;
+  }
+  
+  /* uloreport.css */
+.ag-grid-section {
+  margin-bottom: 2rem; /* Adjust margin as needed */
+}
+
+.ag-theme-alpine {
+  --ag-alpine-blue: #6366f1; /* Example: Customize primary blue color */
+}
+
+  
+  .popular-films {
+    border: 1px solid #363636;
+    width: 387px;
+    height: 420px;
+    margin-top: 20px;
+    margin-left: 920px; /* Menambah margin kiri otomatis untuk memindahkan elemen ke kanan */
+    background-color: var(--card-bg);
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+  .popular-films h3 {
+    font-family: 'Inter';
+    font-size: 18px;
+    color: #BBBBBC;
+    font-weight: bold;
+  }
+  .films-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0px;
+    margin-top: 20px;
+  }
+  
+  .film-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+  
+  .film-card img {
+    width: 92px;
+    height: 54px;
+    object-fit: cover;
+    border-radius: 0.25rem;
+  }
+  
+  .film-info {
+    flex: 1;
+  }
+  
+  .film-title {
+    width: 140px;
+    margin-top: -10px;
+    font-family: 'Inter';
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 0.95rem;
+  }
+  
+  .film-views {
+    margin-top: 30px;
+    margin-left: -156px;
+    font-family: 'Inter';
+    color: var(--secondary-text);
+    font-size: 10px;
+  }
+  .film-percentage-container {
+    margin-left: 90px;
+    border: 1px solid #323433;
+    width: 46px;
+    height: 24px;
+    border-radius: 4px;
+    background-color: #1E1C21;
+    display: flex;
+    align-items: center; /* Center the text and image vertically */
+  }
+  .film-percentage {
+    margin-top: -2px;
+    margin-left: 2px;
+    font-family: 'Inter';
+    font-size: 10px;
+    color: #455EFF;
+  }
+  
+  .percentage-icon {
+    margin-top: 2px;
+    width: 16px !important; /* Adjust size as needed */
+    height: 16px !important; /* Maintain aspect ratio */
+    margin-left: 5px; /* Space between text and icon */
+  }
+  
+  
+  .audience-activity {
+    background-color: var(--card-bg);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    height: 300px;
+  }
+  
+  .subscription-package {
+    background-color: var(--card-bg);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }

@@ -1,0 +1,77 @@
+.chart-container {
+    display: flex;
+    justify-content: flex-end;
+    /* Posisikan elemen ke kanan */
+    margin-top: 20px;
+}
+
+.genre-chart {
+    position: absolute;
+    right: 10px;
+    top: 110px;
+    width: 358px;
+    height: 504px;
+    border-radius: 10px;
+    margin-bottom: 70px;
+    background-color: #1E1C21;
+    border: 1px solid #363636;
+}
+
+.genre-chart canvas {
+    transform: translateY(-60px); /* Menaikkan chart tanpa menggeser background */
+}
+
+
+.legend {
+    margin-left: 45px;
+    position: relative;
+    z-index: 10;
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 190px;
+}
+
+.legend li {
+    grid-column: span 1;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-family: 'Inter';
+    color: #8C97A7;
+}
+
+.legend-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.legend li:nth-child(4),
+.legend li:nth-child(5) {
+  grid-column: span 2; /* Item ke-4 dan ke-5 mengambil dua kolom */
+}
+
+.action-dot {
+    background-color: #455EFF;
+}
+
+.drama-dot {
+    background-color: #878EFE;
+}
+
+.comedy-dot {
+    background-color: #5819DE;
+}
+
+.horror-dot {
+    background-color: #7159FE;
+}
+
+.documentary-dot {
+    background-color: #0E00A2;
+}

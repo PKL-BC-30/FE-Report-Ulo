@@ -1,0 +1,27 @@
+/* AgGridTable.css */
+.ag-theme-alpine {
+    background-color: #1E1C21; /* Background color for the grid */
+}
+
+.ag-header {
+    border-radius: 8px; /* Border radius for the header */
+    background-color: #151318; /* Background color for the header */
+    color: white; /* Text color for the header */
+}
+
+.ag-row {
+    border-bottom: none; /* Remove border between rows */
+}
+
+.ag-row-odd {
+    background-color: #1E1C21; /* Optional: Set the odd rows background color */
+}
+
+.ag-row-even {
+    background-color: #1E1C21; /* Optional: Set the even rows background color */
+}
+
+/* Optional: Style the cell content */
+.ag-cell {
+    color: white; /* Cell text color */
+}
