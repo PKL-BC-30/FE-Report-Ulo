@@ -43,6 +43,24 @@ const AudienceActivity = () => {
             minGridDistance: 30
         });
 
+        // Define manual y-axis values
+        const yAxisLabels = [{
+            value: 0,
+            text: "0"
+        }, {
+            value: 2500,
+            text: "2,500"
+        }, {
+            value: 5000,
+            text: "5,000"
+        }, {
+            value: 7500,
+            text: "7,500"
+        }, {
+            value: 10000,
+            text: "10,000"
+        }];
+
         const yAxis = chart.yAxes.push(
             am5xy.ValueAxis.new(root, {
                 renderer: yRenderer,
@@ -51,10 +69,25 @@ const AudienceActivity = () => {
             })
         );
 
-        // Configure y-axis
-        yAxis.set("numberFormat", "####");
-        yAxis.set("maxPrecision", 0);
-        yAxis.set("strictMinMax", true);
+        // Configure y-axis with manual labels
+        yRenderer.labels.template.setAll({
+            fontSize: 12,
+            fill: am5.color(0x808080),
+            paddingRight: 10
+        });
+
+        yAxis.setAll({
+            numberFormat: "####",
+            maxPrecision: 0,
+            strictMinMax: true
+        });
+
+        // Add custom labels
+        yRenderer.labels.template.adapters.add("text", function(text, target) {
+            const value = target.dataItem?.value;
+            const label = yAxisLabels.find(l => l.value === value);
+            return label ? label.text : text;
+        });
 
         // Configure grid lines (remove vertical and horizontal lines)
         yRenderer.grid.template.setAll({
@@ -77,12 +110,6 @@ const AudienceActivity = () => {
             fontSize: 12,
             fontFamily: "Inter",
             fill: am5.color(0x848397)
-        });
-
-        yRenderer.labels.template.setAll({
-            paddingRight: 10,
-            fontSize: 12,
-            fill: am5.color(0x808080)
         });
 
         // Create series
@@ -113,7 +140,7 @@ const AudienceActivity = () => {
         // Style the series with a solid color for the stroke (line) and shadow (fill)
         series.strokes.template.setAll({
             strokeWidth: 2,
-            stroke: am5.color(0xFFFFFF) // Mengatur warna garis menjadi putih
+            stroke: am5.color(0xFFFFFF)
         });
 
         // Add gradient fill for the series (shadow)
@@ -122,7 +149,7 @@ const AudienceActivity = () => {
             fillOpacity: 0.3,
             fillGradient: am5.LinearGradient.new(root, {
                 stops: [{
-                    color: am5.color(0x67B7DC), // Warna bayangan
+                    color: am5.color(0x67B7DC),
                     opacity: 0.5
                 }, {
                     color: am5.color(0x67B7DC),
@@ -134,29 +161,29 @@ const AudienceActivity = () => {
         // Add data
         const data = [
             { time: "00:00", viewers: 4000 },
-            { time: "01:00", viewers: 3000 },
+            { time: "01:00", viewers: 3600 },
             { time: "02:00", viewers: 2500 },
             { time: "03:00", viewers: 4000 },
             { time: "04:00", viewers: 5000 },
-            { time: "05:00", viewers: 3500 },
+            { time: "05:00", viewers: 4800 },
             { time: "06:00", viewers: 2800 },
             { time: "07:00", viewers: 4200 },
-            { time: "08:00", viewers: 3000 },
+            { time: "08:00", viewers: 2700 },
             { time: "09:00", viewers: 3700 },
             { time: "10:00", viewers: 2500 },
             { time: "11:00", viewers: 4600 },
-            { time: "12:00", viewers: 7500 },
+            { time: "12:00", viewers: 4400 },
             { time: "13:00", viewers: 3400 },
-            { time: "14:00", viewers: 4000 },
-            { time: "15:00", viewers: 3300 },
+            { time: "14:00", viewers: 3000 },
+            { time: "15:00", viewers: 1000 },
             { time: "16:00", viewers: 2000 },
             { time: "17:00", viewers: 3200 },
             { time: "18:00", viewers: 5000 },
             { time: "19:00", viewers: 3700 },
             { time: "20:00", viewers: 3500 },
             { time: "21:00", viewers: 2900 },
-            { time: "22:00", viewers: 2500 },
-            { time: "23:00", viewers: 6000 }
+            { time: "22:00", viewers: 7000 },
+            { time: "23:00", viewers: 7000 }
         ];
 
         // Filter data to only include hours that are multiples of 2
