@@ -1,77 +1,48 @@
-.chart-container {
-    display: flex;
-    justify-content: flex-end;
-    /* Posisikan elemen ke kanan */
-    margin-top: 20px;
-}
-
-.genre-chart {
-    position: absolute;
-    right: 10px;
-    top: 110px;
-    width: 358px;
-    height: 504px;
-    border-radius: 10px;
-    margin-bottom: 70px;
-    background-color: #1E1C21;
-    border: 1px solid #363636;
-}
-
-.genre-chart canvas {
-    transform: translateY(-60px); /* Menaikkan chart tanpa menggeser background */
-}
-
-
-.legend {
-    margin-left: 45px;
-    position: relative;
-    z-index: 10;
-    list-style-type: none;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Onest:wght@100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+.genre-legend {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    margin-top: 190px;
+    grid-template-columns: repeat(2, 1fr); /* Dua kolom dengan ukuran sama */
+    gap: 10px; /* Jarak antara kolom */
+    margin-top: 30px;
+    margin-left: 30px;
 }
 
-.legend li {
-    grid-column: span 1;
+.genre-column {
+    display: flex;
+    flex-direction: column; /* Tampilkan item secara vertikal */
+}
+
+.genre-item {
+    font-family: 'DM Sans';
     display: flex;
     align-items: center;
-    margin-bottom: 8px;
-    font-size: 14px;
-    font-family: 'Inter';
-    color: #8C97A7;
+    margin-bottom: 4px; /* Spasi antara item */
 }
 
-.legend-dot {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
+.legend-circle {
+    width: 11px;
+    height: 11px;
     border-radius: 50%;
     margin-right: 8px;
 }
-.legend li:nth-child(4),
-.legend li:nth-child(5) {
-  grid-column: span 2; /* Item ke-4 dan ke-5 mengambil dua kolom */
+
+/* Style untuk setiap genre menggunakan kelas unik */
+.legend-circle-0 {
+    background-color: #455EFF; /* Action */
 }
 
-.action-dot {
-    background-color: #455EFF;
+.legend-circle-1 {
+    background-color: #878EFE; /* Drama */
 }
 
-.drama-dot {
-    background-color: #878EFE;
+.legend-circle-2 {
+    background-color: #581E9D; /* Comedy */
 }
 
-.comedy-dot {
-    background-color: #5819DE;
+.legend-circle-3 {
+    background-color: #7159FE; /* Horror */
 }
 
-.horror-dot {
-    background-color: #7159FE;
-}
-
-.documentary-dot {
-    background-color: #0E00A2;
+.legend-circle-4 {
+    background-color: #0E00A2; /* Documentary */
 }

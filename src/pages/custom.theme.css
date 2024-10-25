@@ -1,0 +1,117 @@
+/* Kustom tema Ag-Grid dengan latar belakang transparan */
+.ag-theme-custom {
+    --ag-background-color: transparent; /* Latar belakang transparan */
+    --ag-header-background-color: #151318; /* Warna latar belakang header */
+    --ag-header-foreground-color: #FFFFFF; /* Warna teks header */
+    border: none; /* Menghapus border dari Ag-Grid */
+    height: 290px;
+    margin-top: 29px;
+    margin-bottom: 20px;
+    box-shadow: none; /* Menghapus bayangan jika ada */
+    overflow-x: hidden; /* Menyembunyikan overflow horizontal */
+}
+
+/* Mengatur tinggi sel header */
+.ag-theme-custom .ag-header-cell {
+    height: 40px; /* Tinggi cell header */
+    line-height: 40px; /* Menyelaraskan teks ke tengah secara vertikal */
+}
+
+/* Menghapus garis antar row */
+.ag-theme-custom .ag-row {
+    border: none; /* Menghapus garis antar row */
+    background-color: transparent; /* Mengatur background row menjadi transparan */
+}
+
+/* Mengatur background grid menjadi transparan */
+.ag-theme-custom .ag-root {
+    background-color: transparent; /* Mengubah background Ag-Grid menjadi transparan */
+}
+
+/* Menghapus garis grid */
+.ag-theme-custom .ag-body-viewport {
+    border: none; /* Menghapus border pada viewport */
+    overflow-x: auto; /* Memungkinkan scroll horizontal */
+}
+
+/* Mengatur scrollbar untuk viewport */
+.ag-theme-custom .ag-body-viewport::-webkit-scrollbar {
+    height: 8px; /* Tinggi scrollbar */
+}
+
+.ag-theme-custom .ag-body-viewport::-webkit-scrollbar-thumb {
+    background: #555; /* Warna scrollbar */
+    border-radius: 4px; /* Radius scrollbar */
+}
+
+.ag-theme-custom .ag-body-viewport::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Warna track scrollbar */
+}
+
+.ag-theme-custom .ag-header {
+    height: 40px !important; /* Tinggi header */
+    border-radius: 8px; /* Border radius untuk header */
+    border: none; /* Menghapus border header */
+    box-shadow: none; /* Menghapus bayangan jika ada */
+}
+
+.ag-theme-custom .ag-header-cell {
+    height: 40px !important; /* Tinggi cell header */
+    line-height: 40px; /* Menyelaraskan teks ke tengah secara vertikal */
+    text-align: center; /* Memusatkan teks secara horizontal */
+    display: flex; /* Menggunakan flexbox untuk memusatkan konten */
+    align-items: center; /* Memusatkan konten secara vertikal */
+    justify-content: center; /* Memusatkan konten secara horizontal */
+    color: #FFFFFF; /* Warna teks header */
+    font-size: 12px; /* Ukuran font */
+    font-family: 'Inter'; /* Jenis font */
+    font-weight: 700; /* Ketebalan font */
+}
+
+/* Mengatur warna teks row menjadi putih */
+.ag-theme-custom .ag-cell {
+    overflow: hidden; /* Menyembunyikan konten yang terlalu lebar */
+    text-overflow: ellipsis; /* Menambahkan ellipsis untuk teks yang terpotong */
+    white-space: nowrap; 
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+    color: #FFFFFF; /* Warna teks di dalam cell menjadi putih */
+    border: none; /* Menghapus border pada cell */
+}
+
+/* Menghapus border pada cell dan row */
+.ag-theme-custom .ag-cell, .ag-theme-custom .ag-row {
+    border: none; /* Pastikan tidak ada border pada cell dan row */
+}
+
+/* Menghapus border luar */
+.ag-theme-custom .ag-root-wrapper {
+    border: none; /* Menghapus border dari wrapper Ag-Grid */
+}
+
+/* Menghapus border dari viewport */
+.ag-theme-custom .ag-body-viewport {
+    border: none; /* Menghapus border pada viewport */
+    outline: none; /* Menghapus outline jika ada */
+}
+
+/* Menghapus shadow dari Ag-Grid */
+.ag-theme-custom .ag-root {
+    box-shadow: none; /* Menghapus shadow pada Ag-Grid */
+}
+/* Menyembunyikan scrollbar di bagian bawah Ag-Grid */
+.ag-theme-custom .ag-body-viewport {
+    overflow-y: auto; /* Hanya aktifkan scroll vertikal */
+    overflow-x: hidden; /* Menyembunyikan scroll horizontal */
+}
+
+/* Menghapus border scrollbar */
+.ag-theme-custom .ag-body-viewport::-webkit-scrollbar {
+    display: none; /* Menghilangkan scrollbar */
+}
+
+/* Jika Anda juga ingin menghapus scrollbar dengan cara yang lebih universal */
+.ag-theme-custom {
+    overflow-x: hidden; /* Menyembunyikan semua overflow */
+}
