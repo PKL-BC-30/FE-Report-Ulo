@@ -107,7 +107,7 @@ const UloReport = () => {
         </div>
         <div class="genrech">
           <h3>Movie Genre</h3>
-          <GenreChart /> {/* Menampilkan GenreChart */}
+          <GenreChart /> {}
         </div>
       </div>
 

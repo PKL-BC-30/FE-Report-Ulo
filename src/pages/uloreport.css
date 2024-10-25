@@ -864,7 +864,7 @@ body {
 
 .filter-icon {
   background-color: #151318;
-  padding: 5px;
+  padding: 7px;
   width: 30px;
   height: 30px;
   border-radius: 5px; /* Optional: add rounded corners */
@@ -884,8 +884,9 @@ body {
 }
 
 .search-icon {
-  width: 16px;
-  height: 16px;
+  width: 145x;
+  height: 15px;
+  margin-top: -2px;
   margin-right: 5px;
 }
 

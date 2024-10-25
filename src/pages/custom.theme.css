@@ -1,117 +1,227 @@
-/* Kustom tema Ag-Grid dengan latar belakang transparan */
+
 .ag-theme-custom {
-    --ag-background-color: transparent; /* Latar belakang transparan */
-    --ag-header-background-color: #151318; /* Warna latar belakang header */
-    --ag-header-foreground-color: #FFFFFF; /* Warna teks header */
-    border: none; /* Menghapus border dari Ag-Grid */
+    --ag-background-color: transparent;
+    
+    --ag-header-background-color: #151318;
+    
+    --ag-header-foreground-color: #FFFFFF;
+    
+    border: none;
+    
     height: 290px;
     margin-top: 29px;
     margin-bottom: 20px;
-    box-shadow: none; /* Menghapus bayangan jika ada */
-    overflow-x: hidden; /* Menyembunyikan overflow horizontal */
+    box-shadow: none;
+    
+    overflow-x: hidden;
+    
 }
 
-/* Mengatur tinggi sel header */
+
 .ag-theme-custom .ag-header-cell {
-    height: 40px; /* Tinggi cell header */
-    line-height: 40px; /* Menyelaraskan teks ke tengah secara vertikal */
+    height: 40px;
+    
+    line-height: 40px;
+    
 }
 
-/* Menghapus garis antar row */
+
 .ag-theme-custom .ag-row {
-    border: none; /* Menghapus garis antar row */
-    background-color: transparent; /* Mengatur background row menjadi transparan */
+    border: none;
+    
+    background-color: transparent;
+    
 }
 
-/* Mengatur background grid menjadi transparan */
+
 .ag-theme-custom .ag-root {
-    background-color: transparent; /* Mengubah background Ag-Grid menjadi transparan */
+    background-color: transparent;
+    
 }
 
-/* Menghapus garis grid */
+
 .ag-theme-custom .ag-body-viewport {
-    border: none; /* Menghapus border pada viewport */
-    overflow-x: auto; /* Memungkinkan scroll horizontal */
+    border: none;
+    
+    overflow-x: auto;
+    
 }
 
-/* Mengatur scrollbar untuk viewport */
+
 .ag-theme-custom .ag-body-viewport::-webkit-scrollbar {
-    height: 8px; /* Tinggi scrollbar */
+    height: 8px;
+    
 }
 
 .ag-theme-custom .ag-body-viewport::-webkit-scrollbar-thumb {
-    background: #555; /* Warna scrollbar */
-    border-radius: 4px; /* Radius scrollbar */
+    background: #555;
+    
+    border-radius: 4px;
+    
 }
 
 .ag-theme-custom .ag-body-viewport::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Warna track scrollbar */
+    background: #f1f1f1;
+    
 }
 
 .ag-theme-custom .ag-header {
-    height: 40px !important; /* Tinggi header */
-    border-radius: 8px; /* Border radius untuk header */
-    border: none; /* Menghapus border header */
-    box-shadow: none; /* Menghapus bayangan jika ada */
+    height: 40px !important;
+    
+    border-radius: 8px;
+    
+    border: none;
+    
+    box-shadow: none;
+    
 }
 
 .ag-theme-custom .ag-header-cell {
-    height: 40px !important; /* Tinggi cell header */
-    line-height: 40px; /* Menyelaraskan teks ke tengah secara vertikal */
-    text-align: center; /* Memusatkan teks secara horizontal */
-    display: flex; /* Menggunakan flexbox untuk memusatkan konten */
-    align-items: center; /* Memusatkan konten secara vertikal */
-    justify-content: center; /* Memusatkan konten secara horizontal */
-    color: #FFFFFF; /* Warna teks header */
-    font-size: 12px; /* Ukuran font */
-    font-family: 'Inter'; /* Jenis font */
-    font-weight: 700; /* Ketebalan font */
+    height: 40px !important;
+    
+    line-height: 40px;
+    
+    text-align: center;
+    
+    display: flex;
+    
+    align-items: center;
+    
+    justify-content: center;
+    
+    color: #FFFFFF;
+    
+    font-size: 12px;
+    
+    font-family: 'Inter';
+    
+    font-weight: 700;
+    
 }
 
-/* Mengatur warna teks row menjadi putih */
+
 .ag-theme-custom .ag-cell {
-    overflow: hidden; /* Menyembunyikan konten yang terlalu lebar */
-    text-overflow: ellipsis; /* Menambahkan ellipsis untuk teks yang terpotong */
-    white-space: nowrap; 
+    overflow: hidden;
+    
+    text-overflow: ellipsis;
+    
+    white-space: nowrap;
     font-family: 'Inter';
     font-weight: 400;
     font-size: 12px;
-    color: #FFFFFF; /* Warna teks di dalam cell menjadi putih */
-    border: none; /* Menghapus border pada cell */
+    color: #FFFFFF;
+    
+    border: none;
+    
 }
 
-/* Menghapus border pada cell dan row */
-.ag-theme-custom .ag-cell, .ag-theme-custom .ag-row {
-    border: none; /* Pastikan tidak ada border pada cell dan row */
+
+.ag-theme-custom .ag-cell,
+.ag-theme-custom .ag-row {
+    border: none;
+    
 }
 
-/* Menghapus border luar */
+
 .ag-theme-custom .ag-root-wrapper {
-    border: none; /* Menghapus border dari wrapper Ag-Grid */
+    border: none;
+    
 }
 
-/* Menghapus border dari viewport */
+
 .ag-theme-custom .ag-body-viewport {
-    border: none; /* Menghapus border pada viewport */
-    outline: none; /* Menghapus outline jika ada */
+    border: none;
+    
+    outline: none;
+    
 }
 
-/* Menghapus shadow dari Ag-Grid */
+
 .ag-theme-custom .ag-root {
-    box-shadow: none; /* Menghapus shadow pada Ag-Grid */
+    box-shadow: none;
+    
 }
-/* Menyembunyikan scrollbar di bagian bawah Ag-Grid */
+
+
 .ag-theme-custom .ag-body-viewport {
-    overflow-y: auto; /* Hanya aktifkan scroll vertikal */
-    overflow-x: hidden; /* Menyembunyikan scroll horizontal */
+    overflow-y: auto;
+    
+    overflow-x: hidden;
+    
 }
 
-/* Menghapus border scrollbar */
+
 .ag-theme-custom .ag-body-viewport::-webkit-scrollbar {
-    display: none; /* Menghilangkan scrollbar */
+    display: none;
+    
 }
 
-/* Jika Anda juga ingin menghapus scrollbar dengan cara yang lebih universal */
+
 .ag-theme-custom {
-    overflow-x: hidden; /* Menyembunyikan semua overflow */
+    overflow-x: hidden;
+    
+}
+
+
+.status-active {
+    background-color: rgba(0, 182, 155, 0.1);
+    width: 82px;
+    height: 26px;
+    margin-left: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.status-inactive {
+    background-color: rgba(255, 0, 0, 0.1);
+    width: 82px;
+    height: 26px;
+    margin-left: 10px;
+    border-radius: 8px;
+    text-align: center;
+    
+}
+
+
+.ulo-family {
+    background-color: #270720;
+    width: 82px;
+    height: 26px;
+    margin-left: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.ulo-lite {
+    background-color: rgba(134, 0, 181, 0.1);
+    width: 82px;
+    height: 26px;
+    margin-left: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.ulo-plus {
+    background-color: rgba(0, 6, 181, 0.1);
+    width: 82px;
+    height: 26px;
+    margin-left: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.ulo-infinity {
+    background-color:rgba(0, 148, 181, 0.1); width: 82px;
+    height: 26px;
+    margin-left: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.ulo-free {
+    background-color: rgba(0, 0, 0, 0.22);
+    height: 26px;
+    margin-left: 10px;
+    border-radius: 8px;
+    text-align: center;
 }
