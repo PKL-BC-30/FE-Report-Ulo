@@ -107,8 +107,8 @@ const RevenueChart = () => {
       width: am5.percent(50), // Reduce the width of the bars
       cornerRadiusTL: 4,     // Top-left corner radius
       cornerRadiusTR: 4,     // Top-right corner radius
-      cornerRadiusBL: 2,      // Bottom-left corner radius
-      cornerRadiusBR: 2,      // Bottom-right corner radius
+      cornerRadiusBL: 4,      // Bottom-left corner radius
+      cornerRadiusBR: 4,      // Bottom-right corner radius
       fillGradient: am5.LinearGradient.new(root, {
         stops: [
           { color: am5.color("#455EFF"), offset: 0.2 }, // 20% gradient start

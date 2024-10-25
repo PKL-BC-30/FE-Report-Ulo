@@ -11,6 +11,8 @@ import OnePiece from '../img/one piece.png';
 import AngryBirds from '../img/angry birds.png';
 import TAOL from '../img/taol.png';
 import up from '../img/up.svg';
+import filter from '../img/filter.svg';
+import search from '../img/searchh.svg';
 import point from '../img/titik.svg';
 import calendar from '../img/kalender.svg';
 import andre from '../img/andre.svg';
@@ -93,8 +95,14 @@ const UloReport = () => {
           <h3>Revenue</h3>
           <div class="revenue-total">
             <span>Rp. {totalRevenue().toLocaleString()}</span>
-            <span class="percentage-change">+{percentageChange()}% from last year</span>
+            <span class="percentage-change">
+              <img src={up} alt="Upward Trend" class="change-icon" />
+              <span class="change-value">+{percentageChange()}%</span>
+              <span class="change-text">from last year</span>
+            </span>
+
           </div>
+
           <RevenueChart />
         </div>
         <div class="genrech">
@@ -112,9 +120,19 @@ const UloReport = () => {
         <Subscription />
       </div>
       <div class="grid">
-        <h3>Users Data</h3>
+        <div class="grid-header">
+          <h3>Users Data</h3>
+          <div class="grid-tools">
+            <img src={filter} alt="Filter Icon" class="filter-icon" />
+            <div class="search-bar">
+              <img src={search} alt="Search Icon" class="search-icon" />
+              <input type="text" placeholder="Search something here.." class="search-input" />
+            </div>
+          </div>
+        </div>
         <AgGridTable />
       </div>
+
 
       <div class="popular-films">
         <h3>Popular Films</h3>

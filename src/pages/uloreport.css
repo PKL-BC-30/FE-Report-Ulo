@@ -407,11 +407,31 @@ body {
   font-weight: bold;
 }
 
-.percentage-change {
-  margin-left: 30px;
-  font-weight: 500;
+.change-value {
+  color: #455EFF; /* Set the percentage change color */
   font-size: 10px;
-  color: #7B91B0;
+  font-weight: 400;
+}
+
+.change-text {
+  margin-left: 2px;
+  color: #7B91B0; /* Set the "from last year" text color */
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.percentage-change {
+  margin-left: 220px;
+  margin-top: -30px;
+  display: flex;
+  align-items: center;
+}
+
+.change-icon {
+  width: 16px; /* Adjust size as needed */
+  height: 16px;
+  margin-top: 2px;
+  margin-right: 2px; /* Spacing between icon and text */
 }
 
 .popular-films {
@@ -829,4 +849,54 @@ body {
   color: #BBBBBC;
   font-size: 18px;
   font-weight: bold;
+}
+.grid-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grid-tools {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Spacing between filter icon and search bar */
+}
+
+.filter-icon {
+  background-color: #151318;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px; /* Optional: add rounded corners */
+  cursor: pointer;
+}
+
+
+.search-bar {
+  margin-right: 17px;
+  width: 182px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  background-color: #151318; /* Adjust background as desired */
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.search-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.search-input {
+  font-family: 'Inter';
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 12px;
+}
+.search-input::placeholder {
+  margin-top: -12px;
+  font-size: 12px;
 }
