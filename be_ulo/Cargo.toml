@@ -1,0 +1,12 @@
+[package]
+name = "be_ulo"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1.0", features = ["full"] } # Pastikan menambahkan fitur full
+tokio-postgres = "0.7" # Versi terbaru
+actix-cors = "0.6"

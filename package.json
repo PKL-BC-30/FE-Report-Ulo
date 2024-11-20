@@ -19,9 +19,13 @@
   },
   "dependencies": {
     "@amcharts/amcharts5": "^5.10.7",
+    "@ark-ui/solid": "^4.3.0",
     "@solidjs/router": "^0.8.4",
     "ag-grid-community": "^32.3.0",
     "ag-grid-solid": "^31.1.1",
+    "date-fns": "^4.1.0",
+    "flatpickr": "^4.6.13",
+    "solid-datepicker": "^0.0.1",
     "solid-js": "^1.8.11"
   }
 }

@@ -1,0 +1,10 @@
+C:\Users\m s i\FE-Report-Ulo\be_ulo\target\debug\deps\libactix_cors-8a88294225e482d8.rmeta: C:\Users\m\ s\ i\.cargo\registry\src\index.crates.io-6f17d22bba15001f\actix-cors-0.6.5\src\lib.rs C:\Users\m\ s\ i\.cargo\registry\src\index.crates.io-6f17d22bba15001f\actix-cors-0.6.5\src\all_or_some.rs C:\Users\m\ s\ i\.cargo\registry\src\index.crates.io-6f17d22bba15001f\actix-cors-0.6.5\src\builder.rs C:\Users\m\ s\ i\.cargo\registry\src\index.crates.io-6f17d22bba15001f\actix-cors-0.6.5\src\error.rs C:\Users\m\ s\ i\.cargo\registry\src\index.crates.io-6f17d22bba15001f\actix-cors-0.6.5\src\inner.rs C:\Users\m\ s\ i\.cargo\registry\src\index.crates.io-6f17d22bba15001f\actix-cors-0.6.5\src\middleware.rs
+
+C:\Users\m s i\FE-Report-Ulo\be_ulo\target\debug\deps\actix_cors-8a88294225e482d8.d: C:\Users\m\ s\ i\.cargo\registry\src\index.crates.io-6f17d22bba15001f\actix-cors-0.6.5\src\lib.rs C:\Users\m\ s\ i\.cargo\registry\src\index.crates.io-6f17d22bba15001f\actix-cors-0.6.5\src\all_or_some.rs C:\Users\m\ s\ i\.cargo\registry\src\index.crates.io-6f17d22bba15001f\actix-cors-0.6.5\src\builder.rs C:\Users\m\ s\ i\.cargo\registry\src\index.crates.io-6f17d22bba15001f\actix-cors-0.6.5\src\error.rs C:\Users\m\ s\ i\.cargo\registry\src\index.crates.io-6f17d22bba15001f\actix-cors-0.6.5\src\inner.rs C:\Users\m\ s\ i\.cargo\registry\src\index.crates.io-6f17d22bba15001f\actix-cors-0.6.5\src\middleware.rs
+
+C:\Users\m\ s\ i\.cargo\registry\src\index.crates.io-6f17d22bba15001f\actix-cors-0.6.5\src\lib.rs:
+C:\Users\m\ s\ i\.cargo\registry\src\index.crates.io-6f17d22bba15001f\actix-cors-0.6.5\src\all_or_some.rs:
+C:\Users\m\ s\ i\.cargo\registry\src\index.crates.io-6f17d22bba15001f\actix-cors-0.6.5\src\builder.rs:
+C:\Users\m\ s\ i\.cargo\registry\src\index.crates.io-6f17d22bba15001f\actix-cors-0.6.5\src\error.rs:
+C:\Users\m\ s\ i\.cargo\registry\src\index.crates.io-6f17d22bba15001f\actix-cors-0.6.5\src\inner.rs:
+C:\Users\m\ s\ i\.cargo\registry\src\index.crates.io-6f17d22bba15001f\actix-cors-0.6.5\src\middleware.rs:
